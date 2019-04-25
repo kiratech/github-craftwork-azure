@@ -26,7 +26,6 @@ describe("ModerateIssue", () => {
       './authenticate': () => true,
       './get-luis-intent': () => new Promise(resolve => resolve(defaultLabel))
     });
-  });
 
     sinon.assert.calledWith(addLabelsStub, {
       labels: [defaultLabel],
